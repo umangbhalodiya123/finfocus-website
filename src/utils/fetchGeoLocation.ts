@@ -24,7 +24,7 @@ export const getCountryCodeFromCoordinates = async (
   longitude: number,
 ): Promise<string | null> => {
   try {
-    const response = await axios.get(`https://nominatim.openstreetmap.org/reverse`, {
+    const response = await axios.get('https://nominatim.openstreetmap.org/reverse', {
       params: {
         format: 'json',
         lat: latitude,

@@ -40,7 +40,7 @@ export const getArticles = createAsyncThunk<any, Record<string, any>>(
   'articleReducer/getArticles',
   async (filterParams) => {
     try {
-      const res = await axiosGetWithQueryParams(insightServiceEndpoint, `insights`, filterParams)
+      const res = await axiosGetWithQueryParams(insightServiceEndpoint, 'insights', filterParams)
       return res
     } catch (error: any) {
       return error.response.data
