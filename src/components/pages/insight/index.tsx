@@ -66,7 +66,9 @@ const Insight = () => {
   useEffect(() => {
     try {
       dispatch(getCategory({ type: 'insight' }))
-    } catch (error) {}
+    } catch (error) {
+      console.error(error)
+    }
   }, [dispatch])
 
   const handleArticleDetails = (id: string) => {
