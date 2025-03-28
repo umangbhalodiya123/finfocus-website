@@ -1,0 +1,148 @@
+.footer {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #3b348a;
+  padding: 40px 16px;
+
+  .footerBottomAlignment {
+    padding: 24px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p,
+    a {
+      color: #fff;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  .ourSocial {
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #cdcdd9;
+
+    p {
+      color: #cdcdd9;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0 0 16px 0;
+      letter-spacing: 0.98px;
+      text-transform: uppercase;
+    }
+
+    .allIconAlignment {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        width: 36px;
+        height: 36px;
+        border: 1px solid #cdcdd9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .contactButton {
+    padding: 0 0 32px 0;
+
+    button {
+      border: none;
+      cursor: pointer;
+      padding: 8px 8px 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #fff;
+      color: #3b348a;
+      cursor: pointer;
+      border-radius: 999px;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px;
+    }
+  }
+
+  .footerMenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 0 36px 0;
+
+    a {
+      display: block;
+      cursor: pointer;
+      color: #fff;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.28px;
+      margin: 0 0 12px 0;
+    }
+
+    a:last-child {
+      margin: 0;
+    }
+  }
+
+  .footerText {
+    max-width: 343px;
+    padding: 0 0 18px 0;
+
+    h2 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      margin: 0 0 18px 0;
+      color: #fff;
+    }
+
+    p {
+      color: #ded8e6;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  .footerTopbarAlignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 32px 0;
+    position: relative;
+
+    img {
+      display: block;
+      cursor: pointer;
+    }
+
+    .backToTop {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      span {
+        color: #cdcdd9;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        display: block;
+      }
+    }
+  }
+}

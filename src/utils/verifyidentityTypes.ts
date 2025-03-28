@@ -1,0 +1,6 @@
+export const STEPONE = 'stepone'
+export const STEPTWO = 'steptwo'
+export const STEPTHREE = 'stepthree'
+export const STEPFOUR = 'stepfour'
+export const STEPFIVE = 'stepfive'
+export const STEPSIX = 'stepsix'

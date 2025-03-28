@@ -1,0 +1,32 @@
+name: CI/CD
+
+on:
+  push:
+    branches: ['develop', 'staging', 'release*']
+  pull_request:
+    branches: ['develop', 'staging', 'release*']
+    paths-ignore:
+      - '.github/**'
+      - '.gitignore'
+      - '.eslintrc.json'
+      - '.prettierignore'
+      - '**.md'
+
+jobs:
+  ci:
+    name: CI
+    uses: junotechnology/juno-github-actions/.github/workflows/nodejs-ci.yml@main
+    with:
+      node-version: '18'
+      run-tests: true
+      package-manager: 'yarn'
+
+  cd:
+    name: CD
+    if: github.event_name == 'push'
+    needs: ci
+    permissions:
+      id-token: write
+      contents: read
+    uses: junotechnology/juno-github-actions/.github/workflows/aws-amplify-cd.yml@main
+    secrets: inherit

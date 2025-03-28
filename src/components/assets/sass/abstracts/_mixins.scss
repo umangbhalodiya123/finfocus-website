@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin grid($columns: 1, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+@mixin container($max-width: 1200px, $padding: 1rem) {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $padding;
+}
+
+@mixin text-style($size: 'base', $weight: 'regular', $line-height: 1.5) {
+  font-size: get-font-size($size);
+  font-weight: map.get($font-weights, $weight);
+  line-height: $line-height;
+}

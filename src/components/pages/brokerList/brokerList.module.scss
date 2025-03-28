@@ -1,0 +1,17 @@
+.brokerListalignment {
+    padding: 24px 16px 32px 16px;
+    .titleIconAlignment {
+        display: flex;
+        padding: 0 0 26px 0;
+        align-items: center;
+        gap: 12px;
+
+        h2 {
+            color: #05030C;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+        }
+    }
+}

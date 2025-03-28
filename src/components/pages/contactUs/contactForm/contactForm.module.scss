@@ -1,0 +1,104 @@
+.contactForm {
+    padding: 32px 16px 64px 16px;
+    border-radius: 24px 24px 0px 0px;
+    margin-top: -40px;
+    background-color: #fff;
+
+    .formData {
+        h4 {
+            color: #05030C;
+            font-size: 28px;
+            font-style: normal;
+            margin: 0 0 32px 0;
+            font-weight: 400;
+            line-height: 40px;
+        }
+
+        .button {
+            button {
+                border: none;
+                cursor: pointer;
+                color: #fff;
+                padding: 8px 8px 8px 18px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #3B348A;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                border-radius: 999px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+
+        .text {
+            padding: 0 0 32px 0;
+            p {
+                color: #1F1F2B;
+                font-size: 16px;
+                max-width: 299px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+
+        .input {
+            padding: 0 0 24px 0;
+
+            input {
+                border: none;
+                border-bottom: 1px solid #D0D5DD;
+                height: 40px;
+                background-color: transparent;
+                color: #13131C;
+                font-size: 16px;
+                font-style: normal;
+                width: 100%;
+                font-weight: 400;
+                line-height: 24px;
+                transition: .3s ease-in-out;
+
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid #3b348a;
+                }
+            }
+
+            label {
+                display: block;
+                color: #707082;
+                font-size: 16px;
+                font-style: normal;
+                padding: 0 0 2px 0;
+                font-weight: 400;
+                line-height: 20px;
+
+                span {
+                    color: #EA2828;
+                }
+            }
+        }
+    }
+
+    .text {
+        padding: 0 0 46px 0;
+
+        h2 {
+            color: #05030C;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+        }
+
+        h3 {
+            color: #3B348A;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+name: Auto-Assign Manager to UAT PRs
+
+on:
+  pull_request:
+    branches: ["staging"]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  assign-reviewers:
+    name: Assign Reviewers
+    uses: junotechnology/juno-github-actions/.github/workflows/add-managerial-review.yml@main
+    secrets: inherit

@@ -1,0 +1,32 @@
+@use "sass:map";
+
+
+.header {
+    padding: 15px 16px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
+    .logo {
+        position: relative;
+        img {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    .iconalignment {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+}

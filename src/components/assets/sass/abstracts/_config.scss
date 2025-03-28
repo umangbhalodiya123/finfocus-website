@@ -1,0 +1,8 @@
+@forward "sass:map";
+@use '../base/typography-vars' as *;
+@use './mixins' as *;
+@use '../breakpoints/breakpoints' as *;
+
+@forward '../base/typography-vars';
+@forward './mixins';
+@forward '../breakpoints/breakpoints'; 

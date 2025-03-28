@@ -1,0 +1,11 @@
+name: Release Notes
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  notion-push:
+    name: Notion Push
+    uses: junotechnology/juno-github-actions/.github/workflows/release-notes-notion.yml@main
+    secrets: inherit
