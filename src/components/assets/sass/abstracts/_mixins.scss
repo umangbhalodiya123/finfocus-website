@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 @mixin flex($direction: row, $justify: center, $align: center) {
   display: flex;

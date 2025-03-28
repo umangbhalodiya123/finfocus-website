@@ -16,7 +16,7 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 })
 
-export default [
+const eslintConfig = [
   ...compat.extends('next', 'next/core-web-vitals', 'prettier'),
   {
     plugins: {
@@ -38,6 +38,7 @@ export default [
     },
     rules: {
       'linebreak-style': ['error', 'windows'],
+      indent: 'off',
       indent: [
         'error',
         2,
@@ -60,3 +61,5 @@ export default [
     },
   },
 ]
+
+export default eslintConfig

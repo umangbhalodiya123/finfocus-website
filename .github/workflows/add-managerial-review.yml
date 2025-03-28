@@ -2,7 +2,7 @@ name: Auto-Assign Manager to UAT PRs
 
 on:
   pull_request:
-    branches: ["staging"]
+    branches: ['staging']
     types: [opened, synchronize, reopened]
 
 jobs:

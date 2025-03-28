@@ -1,34 +1,32 @@
-@use "sass:map";
-
+@use 'sass:map';
 
 .header {
-    padding: 15px 16px;
-    background-color: #fff;
+  padding: 15px 16px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+
+  .logo {
+    position: relative;
+    width: 127px;
+    height: 30px;
+    img {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .iconalignment {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 9;
+    gap: 8px;
 
-    .logo {
-        position: relative;
-        width: 127px;
-        height: 30px;
-        img {
-            display: block;
-            cursor: pointer;
-        }
+    svg {
+      cursor: pointer;
     }
-
-    .iconalignment {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
-        svg {
-            cursor: pointer;
-        }
-    }
-
+  }
 }

@@ -1,17 +1,17 @@
-$mbsc-font-path: "" !default;
+$mbsc-font-path: '' !default;
 
 @font-face {
-  font-family: "Mobiscroll";
+  font-family: 'Mobiscroll';
   src:
-    url($mbsc-font-path + "icons_mobiscroll.woff?clyjoz") format("woff"),
-    url($mbsc-font-path + "icons_mobiscroll.woff") format("woff"),
-    url($mbsc-font-path + "icons_mobiscroll.ttf?clyjoz") format("truetype");
+    url($mbsc-font-path + 'icons_mobiscroll.woff?clyjoz') format('woff'),
+    url($mbsc-font-path + 'icons_mobiscroll.woff') format('woff'),
+    url($mbsc-font-path + 'icons_mobiscroll.ttf?clyjoz') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 .mbsc-font-icon:before {
-  font-family: "Mobiscroll";
+  font-family: 'Mobiscroll';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,28 +24,28 @@ $mbsc-font-path: "" !default;
 /* Icons */
 
 .mbsc-icon-arrow-down5::before {
-  content: "\ea01";
+  content: '\ea01';
 }
 .mbsc-icon-arrow-left5::before {
-  content: "\ea02";
+  content: '\ea02';
 }
 .mbsc-icon-arrow-right5::before {
-  content: "\ea08";
+  content: '\ea08';
 }
 .mbsc-icon-arrow-up5::before {
-  content: "\ea03";
+  content: '\ea03';
 }
 .mbsc-icon-ion-ios7-arrow-back::before {
-  content: "\ea04";
+  content: '\ea04';
 }
 .mbsc-icon-ion-ios7-arrow-forward::before {
-  content: "\ea05";
+  content: '\ea05';
 }
 .mbsc-icon-ion-ios7-checkmark-empty::before {
-  content: "\ea07";
+  content: '\ea07';
 }
 .mbsc-icon-ios-backspace::before {
-  content: "\ea06";
+  content: '\ea06';
 }
 
 .mbsc-icon {
@@ -88,7 +88,7 @@ $mbsc-font-path: "" !default;
 }
 
 .mbsc-font {
-  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: -apple-system, 'Segoe UI', Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -205,7 +205,7 @@ $mbsc-font-path: "" !default;
 }
 
 // Theme variables for download builder
-$mbsc-ios-theme: "true" !default;
+$mbsc-ios-theme: 'true' !default;
 $mbsc-material-theme: null !default;
 $mbsc-windows-theme: null !default;
 
@@ -350,50 +350,54 @@ $mbsc-ios-dark-calendar-event: $mbsc-calendar-event-dark !default;
 
 $mbsc-ios-colors: (
   // Colors map
-  "background": $mbsc-ios-background,
-  "text": $mbsc-ios-text,
-  "accent": $mbsc-ios-accent,
+  'background': $mbsc-ios-background,
+  'text': $mbsc-ios-text,
+  'accent': $mbsc-ios-accent,
 
-  "calendar-background": $mbsc-ios-calendar-background,
-  "calendar-text": $mbsc-ios-calendar-text,
-  "calendar-accent": $mbsc-ios-calendar-accent,
-  "calendar-border": $mbsc-ios-calendar-border,
-  "calendar-mark": $mbsc-ios-calendar-mark,
-  "calendar-event": $mbsc-ios-calendar-event,
+  'calendar-background': $mbsc-ios-calendar-background,
+  'calendar-text': $mbsc-ios-calendar-text,
+  'calendar-accent': $mbsc-ios-calendar-accent,
+  'calendar-border': $mbsc-ios-calendar-border,
+  'calendar-mark': $mbsc-ios-calendar-mark,
+  'calendar-event': $mbsc-ios-calendar-event,
 
-  "form-background": $mbsc-ios-form-background,
-  "form-text": $mbsc-ios-form-text,
-  "form-accent": $mbsc-ios-form-accent,
-  "form-error": $mbsc-ios-form-error
+  'form-background': $mbsc-ios-form-background,
+  'form-text': $mbsc-ios-form-text,
+  'form-accent': $mbsc-ios-form-accent,
+  'form-error': $mbsc-ios-form-error
 );
 
 $mbsc-ios-dark-colors: (
   // Colors map
-  "background": $mbsc-ios-dark-background,
-  "text": $mbsc-ios-dark-text,
-  "accent": $mbsc-ios-dark-accent,
+  'background': $mbsc-ios-dark-background,
+  'text': $mbsc-ios-dark-text,
+  'accent': $mbsc-ios-dark-accent,
 
-  "calendar-background": $mbsc-ios-dark-calendar-background,
-  "calendar-text": $mbsc-ios-dark-calendar-text,
-  "calendar-accent": $mbsc-ios-dark-calendar-accent,
-  "calendar-border": $mbsc-ios-dark-calendar-border,
-  "calendar-mark": $mbsc-ios-dark-calendar-mark,
-  "calendar-event": $mbsc-ios-dark-calendar-event,
+  'calendar-background': $mbsc-ios-dark-calendar-background,
+  'calendar-text': $mbsc-ios-dark-calendar-text,
+  'calendar-accent': $mbsc-ios-dark-calendar-accent,
+  'calendar-border': $mbsc-ios-dark-calendar-border,
+  'calendar-mark': $mbsc-ios-dark-calendar-mark,
+  'calendar-event': $mbsc-ios-dark-calendar-event,
 
-  "form-background": $mbsc-ios-dark-form-background,
-  "form-text": $mbsc-ios-dark-form-text,
-  "form-accent": $mbsc-ios-dark-form-accent,
-  "form-error": $mbsc-ios-dark-form-error
+  'form-background': $mbsc-ios-dark-form-background,
+  'form-text': $mbsc-ios-dark-form-text,
+  'form-accent': $mbsc-ios-dark-form-accent,
+  'form-error': $mbsc-ios-dark-form-error
 );
 
 @function mbsc-ios-colors($params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $background-limited: hsl(hue($background), saturation($background), max(lightness($background), 3%));
+  $background-limited: hsl(
+    hue($background),
+    saturation($background),
+    max(lightness($background), 3%)
+  );
   $background-alt: lighten($background, 6%);
-  $border-color: "";
+  $border-color: '';
 
   @if (lightness($background) > 50%) {
     $border-color: darken($background-limited, 17%);
@@ -403,9 +407,9 @@ $mbsc-ios-dark-colors: (
 
   @return (
     // General colors
-    "background-alt": $background-alt,
-    "background-limited": $background-limited,
-    "border-color": $border-color
+    'background-alt': $background-alt,
+    'background-limited': $background-limited,
+    'border-color': $border-color
   );
 }
 
@@ -418,31 +422,31 @@ $mbsc-ios-dark-button-text: $mbsc-button-text-dark !default;
 $mbsc-ios-colors: map-merge(
   $mbsc-ios-colors,
   (
-    "button-color": $mbsc-ios-button-color,
-    "button-text": $mbsc-ios-button-text
+    'button-color': $mbsc-ios-button-color,
+    'button-text': $mbsc-ios-button-text,
   )
 );
 
 $mbsc-ios-dark-colors: map-merge(
   $mbsc-ios-dark-colors,
   (
-    "button-color": $mbsc-ios-dark-button-color,
-    "button-text": $mbsc-ios-dark-button-text
+    'button-color': $mbsc-ios-dark-button-color,
+    'button-text': $mbsc-ios-dark-button-text,
   )
 );
 
 @mixin mbsc-ios-button($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $button-background-param: map-get($params, "button-color");
-  $button-text-param: map-get($params, "button-text");
+  $button-background-param: map-get($params, 'button-color');
+  $button-text-param: map-get($params, 'button-text');
 
   $white: #fff;
   $black: #000;
-  $button-background: "";
-  $background-contrast: "";
+  $button-background: '';
+  $background-contrast: '';
 
   @if (lightness($background) > 50%) {
     $button-background: lighten($background, 10%);
@@ -475,7 +479,7 @@ $mbsc-ios-dark-colors: map-merge(
   //   }
   // }
 
-  $form-selection: "";
+  $form-selection: '';
 
   // Light button
   @if (lightness($accent) > 50%) {
@@ -743,8 +747,8 @@ $mbsc-ios-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-button("ios", $mbsc-ios-colors);
-  @include mbsc-ios-button("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-button('ios', $mbsc-ios-colors);
+  @include mbsc-ios-button('ios-dark', $mbsc-ios-dark-colors);
 }
 
 $mbsc-material-accent: #1a73e8 !default;
@@ -796,46 +800,46 @@ $mbsc-material-dark-calendar-event: $mbsc-calendar-event-dark !default;
 
 $mbsc-material-colors: (
   // Colors map
-  "background": $mbsc-material-background,
-  "text": $mbsc-material-text,
-  "accent": $mbsc-material-accent,
+  'background': $mbsc-material-background,
+  'text': $mbsc-material-text,
+  'accent': $mbsc-material-accent,
 
-  "calendar-background": $mbsc-material-calendar-background,
-  "calendar-text": $mbsc-material-calendar-text,
-  "calendar-accent": $mbsc-material-calendar-accent,
-  "calendar-border": $mbsc-material-calendar-border,
-  "calendar-mark": $mbsc-material-calendar-mark,
-  "calendar-event": $mbsc-material-calendar-event,
+  'calendar-background': $mbsc-material-calendar-background,
+  'calendar-text': $mbsc-material-calendar-text,
+  'calendar-accent': $mbsc-material-calendar-accent,
+  'calendar-border': $mbsc-material-calendar-border,
+  'calendar-mark': $mbsc-material-calendar-mark,
+  'calendar-event': $mbsc-material-calendar-event,
 
-  "form-background": $mbsc-material-form-background,
-  "form-text": $mbsc-material-form-text,
-  "form-accent": $mbsc-material-form-accent,
-  "form-error": $mbsc-material-form-error
+  'form-background': $mbsc-material-form-background,
+  'form-text': $mbsc-material-form-text,
+  'form-accent': $mbsc-material-form-accent,
+  'form-error': $mbsc-material-form-error
 );
 
 $mbsc-material-dark-colors: (
   // Colors map
-  "background": $mbsc-material-dark-background,
-  "text": $mbsc-material-dark-text,
-  "accent": $mbsc-material-dark-accent,
+  'background': $mbsc-material-dark-background,
+  'text': $mbsc-material-dark-text,
+  'accent': $mbsc-material-dark-accent,
 
-  "calendar-background": $mbsc-material-dark-calendar-background,
-  "calendar-text": $mbsc-material-dark-calendar-text,
-  "calendar-accent": $mbsc-material-dark-calendar-accent,
-  "calendar-border": $mbsc-material-dark-calendar-border,
-  "calendar-mark": $mbsc-material-dark-calendar-mark,
-  "calendar-event": $mbsc-material-dark-calendar-event,
+  'calendar-background': $mbsc-material-dark-calendar-background,
+  'calendar-text': $mbsc-material-dark-calendar-text,
+  'calendar-accent': $mbsc-material-dark-calendar-accent,
+  'calendar-border': $mbsc-material-dark-calendar-border,
+  'calendar-mark': $mbsc-material-dark-calendar-mark,
+  'calendar-event': $mbsc-material-dark-calendar-event,
 
-  "form-background": $mbsc-material-dark-form-background,
-  "form-text": $mbsc-material-dark-form-text,
-  "form-accent": $mbsc-material-dark-form-accent,
-  "form-error": $mbsc-material-dark-form-error
+  'form-background': $mbsc-material-dark-form-background,
+  'form-text': $mbsc-material-dark-form-text,
+  'form-accent': $mbsc-material-dark-form-accent,
+  'form-error': $mbsc-material-dark-form-error
 );
 
 @function mbsc-material-colors($params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
   @return ();
 }
@@ -849,30 +853,30 @@ $mbsc-material-dark-button-text: $mbsc-button-text-dark !default;
 $mbsc-material-colors: map-merge(
   $mbsc-material-colors,
   (
-    "button-color": $mbsc-material-button-color,
-    "button-text": $mbsc-material-button-text
+    'button-color': $mbsc-material-button-color,
+    'button-text': $mbsc-material-button-text,
   )
 );
 
 $mbsc-material-dark-colors: map-merge(
   $mbsc-material-dark-colors,
   (
-    "button-color": $mbsc-material-dark-button-color,
-    "button-text": $mbsc-material-dark-button-text
+    'button-color': $mbsc-material-dark-button-color,
+    'button-text': $mbsc-material-dark-button-text,
   )
 );
 
 @mixin mbsc-material-button($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $button-background-param: map-get($params, "button-color");
-  $button-text-param: map-get($params, "button-text");
+  $button-background-param: map-get($params, 'button-color');
+  $button-text-param: map-get($params, 'button-text');
 
   $button-active: darken($background, 13%);
-  $button-text: "";
-  $button-background: "";
+  $button-text: '';
+  $button-background: '';
 
   @if (lightness($background) > 50%) {
     $button-text: darken($text, 36%);
@@ -1267,8 +1271,8 @@ $mbsc-material-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-button("material", $mbsc-material-colors);
-  @include mbsc-material-button("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-button('material', $mbsc-material-colors);
+  @include mbsc-material-button('material-dark', $mbsc-material-dark-colors);
 }
 
 $mbsc-windows-accent: #0078d7 !default;
@@ -1320,46 +1324,46 @@ $mbsc-windows-dark-calendar-event: $mbsc-calendar-event-dark !default;
 
 $mbsc-windows-colors: (
   // Colors map
-  "background": $mbsc-windows-background,
-  "text": $mbsc-windows-text,
-  "accent": $mbsc-windows-accent,
+  'background': $mbsc-windows-background,
+  'text': $mbsc-windows-text,
+  'accent': $mbsc-windows-accent,
 
-  "calendar-background": $mbsc-windows-calendar-background,
-  "calendar-text": $mbsc-windows-calendar-text,
-  "calendar-accent": $mbsc-windows-calendar-accent,
-  "calendar-border": $mbsc-windows-calendar-border,
-  "calendar-mark": $mbsc-windows-calendar-mark,
-  "calendar-event": $mbsc-windows-calendar-event,
+  'calendar-background': $mbsc-windows-calendar-background,
+  'calendar-text': $mbsc-windows-calendar-text,
+  'calendar-accent': $mbsc-windows-calendar-accent,
+  'calendar-border': $mbsc-windows-calendar-border,
+  'calendar-mark': $mbsc-windows-calendar-mark,
+  'calendar-event': $mbsc-windows-calendar-event,
 
-  "form-background": $mbsc-windows-form-background,
-  "form-text": $mbsc-windows-form-text,
-  "form-accent": $mbsc-windows-form-accent,
-  "form-error": $mbsc-windows-form-error
+  'form-background': $mbsc-windows-form-background,
+  'form-text': $mbsc-windows-form-text,
+  'form-accent': $mbsc-windows-form-accent,
+  'form-error': $mbsc-windows-form-error
 );
 
 $mbsc-windows-dark-colors: (
   // Colors map
-  "background": $mbsc-windows-dark-background,
-  "text": $mbsc-windows-dark-text,
-  "accent": $mbsc-windows-dark-accent,
+  'background': $mbsc-windows-dark-background,
+  'text': $mbsc-windows-dark-text,
+  'accent': $mbsc-windows-dark-accent,
 
-  "calendar-background": $mbsc-windows-dark-calendar-background,
-  "calendar-text": $mbsc-windows-dark-calendar-text,
-  "calendar-accent": $mbsc-windows-dark-calendar-accent,
-  "calendar-border": $mbsc-windows-dark-calendar-border,
-  "calendar-mark": $mbsc-windows-dark-calendar-mark,
-  "calendar-event": $mbsc-windows-dark-calendar-event,
+  'calendar-background': $mbsc-windows-dark-calendar-background,
+  'calendar-text': $mbsc-windows-dark-calendar-text,
+  'calendar-accent': $mbsc-windows-dark-calendar-accent,
+  'calendar-border': $mbsc-windows-dark-calendar-border,
+  'calendar-mark': $mbsc-windows-dark-calendar-mark,
+  'calendar-event': $mbsc-windows-dark-calendar-event,
 
-  "form-background": $mbsc-windows-dark-form-background,
-  "form-text": $mbsc-windows-dark-form-text,
-  "form-accent": $mbsc-windows-dark-form-accent,
-  "form-error": $mbsc-windows-dark-form-error
+  'form-background': $mbsc-windows-dark-form-background,
+  'form-text': $mbsc-windows-dark-form-text,
+  'form-accent': $mbsc-windows-dark-form-accent,
+  'form-error': $mbsc-windows-dark-form-error
 );
 
 @function mbsc-windows-colors($params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
   @return ();
 }
@@ -1373,33 +1377,33 @@ $mbsc-windows-dark-button-text: $mbsc-button-text-dark !default;
 $mbsc-windows-colors: map-merge(
   $mbsc-windows-colors,
   (
-    "button-color": $mbsc-windows-button-color,
-    "button-text": $mbsc-windows-button-text
+    'button-color': $mbsc-windows-button-color,
+    'button-text': $mbsc-windows-button-text,
   )
 );
 
 $mbsc-windows-dark-colors: map-merge(
   $mbsc-windows-dark-colors,
   (
-    "button-color": $mbsc-windows-dark-button-color,
-    "button-text": $mbsc-windows-dark-button-text
+    'button-color': $mbsc-windows-dark-button-color,
+    'button-text': $mbsc-windows-dark-button-text,
   )
 );
 
 @mixin mbsc-windows-button($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $button-background-param: map-get($params, "button-color");
-  $button-text-param: map-get($params, "button-text");
+  $button-background-param: map-get($params, 'button-color');
+  $button-text-param: map-get($params, 'button-text');
 
   $button-text: if($button-text-param, $button-text-param, $text);
 
-  $button-bg: "";
-  $hover: "";
-  $button-border: "";
-  $button-border-hover: "";
+  $button-bg: '';
+  $hover: '';
+  $button-border: '';
+  $button-border-hover: '';
   $dark-text: darken($mbsc-windows-dark, 30%);
 
   @if (lightness($background) > 50%) {
@@ -1427,7 +1431,7 @@ $mbsc-windows-dark-colors: map-merge(
   }
 
   $active-base: if($button-background-param, $button-background-param, $background);
-  $button-active: "";
+  $button-active: '';
 
   @if (lightness($active-base) > 50%) {
     $button-active: lighten($button-text, 28%);
@@ -1810,8 +1814,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-button("windows", $mbsc-windows-colors);
-  @include mbsc-windows-button("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-button('windows', $mbsc-windows-colors);
+  @include mbsc-windows-button('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-button {
@@ -1893,15 +1897,15 @@ $mbsc-windows-dark-colors: map-merge(
 }
 
 @mixin mbsc-ios-popup($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
   $is-dark: false;
-  $button-hover: "";
-  $buttons-background: "";
-  $popup-border: "";
-  $popup-background: "";
+  $button-hover: '';
+  $buttons-background: '';
+  $popup-border: '';
+  $popup-background: '';
 
   @if (lightness($background) > 50%) {
     $button-hover: darken($background, 5%);
@@ -2167,16 +2171,16 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-popup("ios", $mbsc-ios-colors);
-  @include mbsc-ios-popup("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-popup('ios', $mbsc-ios-colors);
+  @include mbsc-ios-popup('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-material-popup($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $popup-background: "";
+  $popup-background: '';
 
   @if (lightness($background) > 50%) {
     $popup-background: $background;
@@ -2256,16 +2260,16 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-popup("material", $mbsc-material-colors);
-  @include mbsc-material-popup("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-popup('material', $mbsc-material-colors);
+  @include mbsc-material-popup('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-windows-popup($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $border: "";
+  $border: '';
 
   @if (lightness($background) > 50%) {
     $border: darken($background, 10%);
@@ -2365,8 +2369,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-popup("windows", $mbsc-windows-colors);
-  @include mbsc-windows-popup("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-popup('windows', $mbsc-windows-colors);
+  @include mbsc-windows-popup('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-popup {
@@ -2516,7 +2520,10 @@ $mbsc-windows-dark-colors: map-merge(
   .mbsc-popup-wrapper-center {
     padding: 1em;
     align-items: center;
-    border-width: var(--mbsc-safe-top) var(--mbsc-safe-right) var(--mbsc-safe-bottom) var(--mbsc-safe-left);
+    border-width: var(--mbsc-safe-top)
+      var(--mbsc-safe-right)
+      var(--mbsc-safe-bottom)
+      var(--mbsc-safe-left);
   }
 
   .mbsc-popup-wrapper-top {
@@ -2791,27 +2798,31 @@ $mbsc-windows-dark-colors: map-merge(
 }
 
 @mixin mbsc-ios-calendar-view($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $background-param: map-get($params, "calendar-background");
-  $text-param: map-get($params, "calendar-text");
-  $accent-param: map-get($params, "calendar-accent");
-  $border-param: map-get($params, "calendar-border");
-  $mark-param: map-get($params, "calendar-mark");
-  $event-param: map-get($params, "calendar-event");
+  $background-param: map-get($params, 'calendar-background');
+  $text-param: map-get($params, 'calendar-text');
+  $accent-param: map-get($params, 'calendar-accent');
+  $border-param: map-get($params, 'calendar-border');
+  $mark-param: map-get($params, 'calendar-mark');
+  $event-param: map-get($params, 'calendar-event');
 
   $background: if($background-param, $background-param, $background);
-  $text: if($text-param, $text-param, if($background-param, get-contrast-color($background), $text));
+  $text: if(
+    $text-param,
+    $text-param,
+    if($background-param, get-contrast-color($background), $text)
+  );
   $accent: if($accent-param, $accent-param, $accent);
   $event: if($event-param, $event-param, #5ac8fa);
 
-  $background-alt: "";
-  $border-color: "";
-  $popup-background: "";
-  $popup-cell: "";
-  $hover: "";
+  $background-alt: '';
+  $border-color: '';
+  $popup-background: '';
+  $popup-cell: '';
+  $hover: '';
 
   @if (lightness($background) > 50%) {
     $background-alt: lighten($background, 3%);
@@ -2827,8 +2838,8 @@ $mbsc-windows-dark-colors: map-merge(
     $hover: lighten($background, 17%);
   }
 
-  $highlight: "";
-  $highlight-contrast: "";
+  $highlight: '';
+  $highlight-contrast: '';
 
   @if (lightness($background) > 50%) {
     $highlight: lighten(desaturate($accent, 14%), 39%);
@@ -3010,7 +3021,7 @@ $mbsc-windows-dark-colors: map-merge(
 
     &.mbsc-range-day::after,
     &.mbsc-range-hover::before {
-      content: "";
+      content: '';
       height: 1.875em;
       position: absolute;
       left: -1px;
@@ -3131,7 +3142,7 @@ $mbsc-windows-dark-colors: map-merge(
         margin-right: -1px;
         border-left-width: 1px;
         border-left-style: solid;
-        content: "";
+        content: '';
       }
     }
 
@@ -3231,32 +3242,36 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-calendar-view("ios", $mbsc-ios-colors);
-  @include mbsc-ios-calendar-view("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-calendar-view('ios', $mbsc-ios-colors);
+  @include mbsc-ios-calendar-view('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-material-calendar-view($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $background-param: map-get($params, "calendar-background");
-  $text-param: map-get($params, "calendar-text");
-  $accent-param: map-get($params, "calendar-accent");
-  $border-param: map-get($params, "calendar-border");
-  $mark-param: map-get($params, "calendar-mark");
-  $event-param: map-get($params, "calendar-event");
+  $background-param: map-get($params, 'calendar-background');
+  $text-param: map-get($params, 'calendar-text');
+  $accent-param: map-get($params, 'calendar-accent');
+  $border-param: map-get($params, 'calendar-border');
+  $mark-param: map-get($params, 'calendar-mark');
+  $event-param: map-get($params, 'calendar-event');
 
   $background: if($background-param, $background-param, $background);
-  $text: if($text-param, $text-param, if($background-param, get-contrast-color($background-param), $text));
+  $text: if(
+    $text-param,
+    $text-param,
+    if($background-param, get-contrast-color($background-param), $text)
+  );
   $accent: if($accent-param, $accent-param, $accent);
   $mark: if($mark-param, $mark-param, $accent);
   $event: if($event-param, $event-param, $accent);
 
-  $border: "";
-  $cell-hover: "";
-  $picker-background: "";
-  $hover: "";
+  $border: '';
+  $cell-hover: '';
+  $picker-background: '';
+  $hover: '';
 
   // Light background
   @if (lightness($background) > 50%) {
@@ -3392,7 +3407,7 @@ $mbsc-windows-dark-colors: map-merge(
 @if ($mbsc-material-theme and $mbsc-calendar-view) {
   .mbsc-material {
     &.mbsc-calendar-wrapper-fixed:after {
-      content: "";
+      content: '';
       position: absolute;
       z-index: 7;
       bottom: -0.5em;
@@ -3467,7 +3482,7 @@ $mbsc-windows-dark-colors: map-merge(
 
     &.mbsc-range-day::after,
     &.mbsc-range-hover::before {
-      content: "";
+      content: '';
       height: 1.75em;
       position: absolute;
       left: 0;
@@ -3589,7 +3604,7 @@ $mbsc-windows-dark-colors: map-merge(
         margin-right: -1px;
         border-left-width: 1px;
         border-left-style: solid;
-        content: "";
+        content: '';
       }
     }
 
@@ -3656,32 +3671,36 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-calendar-view("material", $mbsc-material-colors);
-  @include mbsc-material-calendar-view("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-calendar-view('material', $mbsc-material-colors);
+  @include mbsc-material-calendar-view('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-windows-calendar-view($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $background-param: map-get($params, "calendar-background");
-  $text-param: map-get($params, "calendar-text");
-  $accent-param: map-get($params, "calendar-accent");
-  $border-param: map-get($params, "calendar-border");
-  $mark-param: map-get($params, "calendar-mark");
-  $event-param: map-get($params, "calendar-event");
+  $background-param: map-get($params, 'calendar-background');
+  $text-param: map-get($params, 'calendar-text');
+  $accent-param: map-get($params, 'calendar-accent');
+  $border-param: map-get($params, 'calendar-border');
+  $mark-param: map-get($params, 'calendar-mark');
+  $event-param: map-get($params, 'calendar-event');
 
   $background: if($background-param, $background-param, $background);
-  $text: if($text-param, $text-param, if($background-param, get-contrast-color($background-param), $text));
+  $text: if(
+    $text-param,
+    $text-param,
+    if($background-param, get-contrast-color($background-param), $text)
+  );
   $accent: if($accent-param, $accent-param, $accent);
   $mark: if($mark-param, $mark-param, rgba($text, 0.5));
   $event: if($event-param, $event-param, $accent);
 
-  $alt-text: "";
-  $border: "";
-  $button-bg: "";
-  $hover: "";
+  $alt-text: '';
+  $border: '';
+  $button-bg: '';
+  $hover: '';
 
   @if (lightness($background) > 50%) {
     $alt-text: lighten($text, 20%);
@@ -3902,7 +3921,7 @@ $mbsc-windows-dark-colors: map-merge(
     }
 
     &.mbsc-calendar-cell:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -4047,8 +4066,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-calendar-view("windows", $mbsc-windows-colors);
-  @include mbsc-windows-calendar-view("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-calendar-view('windows', $mbsc-windows-colors);
+  @include mbsc-windows-calendar-view('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-calendar-view {
@@ -4382,7 +4401,7 @@ $mbsc-windows-dark-colors: map-merge(
   /* Day highlight */
 
   .mbsc-calendar-day-highlight:before {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 0;
     left: 0;
@@ -4448,7 +4467,7 @@ $mbsc-windows-dark-colors: map-merge(
 
   .mbsc-calendar-text:before,
   .mbsc-calendar-label-background {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 0;
     top: 0;
@@ -4507,7 +4526,7 @@ $mbsc-windows-dark-colors: map-merge(
   }
 
   .mbsc-calendar-label-resize:after {
-    content: "";
+    content: '';
     display: none;
     position: absolute;
     top: 50%;
@@ -4542,7 +4561,7 @@ $mbsc-windows-dark-colors: map-merge(
 
   .mbsc-calendar-label-resize-start-touch:before,
   .mbsc-calendar-label-resize-end-touch:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     margin-top: -1em;
@@ -4619,39 +4638,39 @@ $mbsc-windows-dark-colors: map-merge(
 }
 
 @if ($mbsc-ios-theme) {
-  @include mbsc-ios-calendar("ios", $mbsc-ios-colors);
-  @include mbsc-ios-calendar("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-calendar('ios', $mbsc-ios-colors);
+  @include mbsc-ios-calendar('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-material-calendar($theme, $params) {
 }
 
 @if ($mbsc-material-theme) {
-  @include mbsc-material-calendar("material", $mbsc-material-colors);
-  @include mbsc-material-calendar("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-calendar('material', $mbsc-material-colors);
+  @include mbsc-material-calendar('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-windows-calendar($theme, $params) {
 }
 
 @if ($mbsc-windows-theme) {
-  @include mbsc-windows-calendar("windows", $mbsc-windows-colors);
-  @include mbsc-windows-calendar("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-calendar('windows', $mbsc-windows-colors);
+  @include mbsc-windows-calendar('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @mixin mbsc-ios-form-controls($theme, $params) {
-  $text: map-get($params, "text");
-  $background: map-get($params, "background");
+  $text: map-get($params, 'text');
+  $background: map-get($params, 'background');
 
-  $bg-param: map-get($params, "form-background");
-  $err-param: map-get($params, "form-error");
+  $bg-param: map-get($params, 'form-background');
+  $err-param: map-get($params, 'form-error');
 
   $background: if($bg-param, $bg-param, $background);
 
   $is-dark: false;
-  $border-color: "";
-  $wrapper-background: "";
-  $wrapper-background-popup: "";
+  $border-color: '';
+  $wrapper-background: '';
+  $wrapper-background-popup: '';
 
   @if (lightness($background) > 50%) {
     $border-color: darken($background, 17%);
@@ -4705,7 +4724,7 @@ $mbsc-windows-dark-colors: map-merge(
 
     &.mbsc-form-control-wrapper:before,
     &.mbsc-form-control-wrapper:after {
-      content: "";
+      content: '';
       position: absolute;
       border-top: 1px solid transparent;
     }
@@ -4768,8 +4787,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-form-controls("ios", $mbsc-ios-colors);
-  @include mbsc-ios-form-controls("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-form-controls('ios', $mbsc-ios-colors);
+  @include mbsc-ios-form-controls('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-material-form-controls($theme, $params) {
@@ -4783,8 +4802,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-form-controls("material", $mbsc-material-colors);
-  @include mbsc-material-form-controls("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-form-controls('material', $mbsc-material-colors);
+  @include mbsc-material-form-controls('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-windows-form-controls($theme, $params) {
@@ -4798,8 +4817,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-form-controls("windows", $mbsc-windows-colors);
-  @include mbsc-windows-form-controls("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-form-controls('windows', $mbsc-windows-colors);
+  @include mbsc-windows-form-controls('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-forms {
@@ -4834,10 +4853,10 @@ $mbsc-ios-colors: map-merge(
   $mbsc-ios-colors,
   (
     // Colors map
-    "input-background": $mbsc-ios-input-background,
-    "input-text": $mbsc-ios-input-text,
-    "input-accent": $mbsc-ios-input-accent,
-    "input-border": $mbsc-ios-input-border
+    'input-background': $mbsc-ios-input-background,
+    'input-text': $mbsc-ios-input-text,
+    'input-accent': $mbsc-ios-input-accent,
+    'input-border': $mbsc-ios-input-border
   )
 );
 
@@ -4845,33 +4864,33 @@ $mbsc-ios-dark-colors: map-merge(
   $mbsc-ios-dark-colors,
   (
     // Colors map
-    "input-background": $mbsc-ios-dark-input-background,
-    "input-text": $mbsc-ios-dark-input-text,
-    "input-accent": $mbsc-ios-dark-input-accent,
-    "input-border": $mbsc-ios-dark-input-border
+    'input-background': $mbsc-ios-dark-input-background,
+    'input-text': $mbsc-ios-dark-input-text,
+    'input-accent': $mbsc-ios-dark-input-accent,
+    'input-border': $mbsc-ios-dark-input-border
   )
 );
 
 @mixin mbsc-ios-input($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
 
-  $bg-param: map-get($params, "input-background");
-  $text-param: map-get($params, "input-text");
-  $brd-param: map-get($params, "input-border");
-  $err-param: map-get($params, "form-error");
+  $bg-param: map-get($params, 'input-background');
+  $text-param: map-get($params, 'input-text');
+  $brd-param: map-get($params, 'input-border');
+  $err-param: map-get($params, 'form-error');
 
   $background: if($bg-param, $bg-param, $background);
   $text: if($text-param, $text-param, $text);
   $error: if($err-param, $err-param, $mbsc-ios-error);
 
   $is-dark: false;
-  $border-color: "";
-  $input-background: "";
-  $input-background-popup: "";
-  $input-tag-background: "";
+  $border-color: '';
+  $input-background: '';
+  $input-background-popup: '';
+  $input-tag-background: '';
   $textfield-text: $text;
-  $textfield-icon-color: "";
+  $textfield-icon-color: '';
 
   // Light background
   @if (lightness($background) > 50%) {
@@ -5357,8 +5376,8 @@ $mbsc-ios-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-input("ios", $mbsc-ios-colors);
-  @include mbsc-ios-input("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-input('ios', $mbsc-ios-colors);
+  @include mbsc-ios-input('ios-dark', $mbsc-ios-dark-colors);
 }
 
 $mbsc-material-input-background: $mbsc-input-background-light !default;
@@ -5375,10 +5394,10 @@ $mbsc-material-colors: map-merge(
   $mbsc-material-colors,
   (
     // Colors map
-    "input-background": $mbsc-material-input-background,
-    "input-text": $mbsc-material-input-text,
-    "input-accent": $mbsc-material-input-accent,
-    "input-border": $mbsc-material-input-border
+    'input-background': $mbsc-material-input-background,
+    'input-text': $mbsc-material-input-text,
+    'input-accent': $mbsc-material-input-accent,
+    'input-border': $mbsc-material-input-border
   )
 );
 
@@ -5386,38 +5405,38 @@ $mbsc-material-dark-colors: map-merge(
   $mbsc-material-dark-colors,
   (
     // Colors map
-    "input-background": $mbsc-material-dark-input-background,
-    "input-text": $mbsc-material-dark-input-text,
-    "input-accent": $mbsc-material-dark-input-accent,
-    "input-border": $mbsc-material-dark-input-border
+    'input-background': $mbsc-material-dark-input-background,
+    'input-text': $mbsc-material-dark-input-text,
+    'input-accent': $mbsc-material-dark-input-accent,
+    'input-border': $mbsc-material-dark-input-border
   )
 );
 
 @mixin mbsc-material-input($theme, $params) {
-  $background: map-get($params, "background");
-  $accent: map-get($params, "accent");
-  $text: map-get($params, "text");
+  $background: map-get($params, 'background');
+  $accent: map-get($params, 'accent');
+  $text: map-get($params, 'text');
 
-  $bg-param: map-get($params, "input-background");
-  $text-param: map-get($params, "input-text");
-  $acc-param: map-get($params, "input-accent");
-  $err-param: map-get($params, "form-error");
-  $brd-param: map-get($params, "input-border");
+  $bg-param: map-get($params, 'input-background');
+  $text-param: map-get($params, 'input-text');
+  $acc-param: map-get($params, 'input-accent');
+  $err-param: map-get($params, 'form-error');
+  $brd-param: map-get($params, 'input-border');
 
   $text: if($text-param, $text-param, $text);
   $accent: if($acc-param, $acc-param, $accent);
   $error: if($err-param, $err-param, $mbsc-material-error);
 
-  $input-base-color: "";
-  $input-text: "";
-  $input-icon-color: "";
-  $input-border-color: "";
-  $input-label-color: "";
-  $input-background: "";
-  $input-box-background: "";
-  $input-box-hover-background: "";
-  $input-box-focus-background: "";
-  $input-tag-background: "";
+  $input-base-color: '';
+  $input-text: '';
+  $input-icon-color: '';
+  $input-border-color: '';
+  $input-label-color: '';
+  $input-background: '';
+  $input-box-background: '';
+  $input-box-hover-background: '';
+  $input-box-focus-background: '';
+  $input-tag-background: '';
 
   // Light background
   @if (lightness($background) > 50%) {
@@ -6100,8 +6119,8 @@ $mbsc-material-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-input("material", $mbsc-material-colors);
-  @include mbsc-material-input("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-input('material', $mbsc-material-colors);
+  @include mbsc-material-input('material-dark', $mbsc-material-dark-colors);
 }
 
 $mbsc-windows-input-background: $mbsc-input-background-light !default;
@@ -6118,10 +6137,10 @@ $mbsc-windows-colors: map-merge(
   $mbsc-windows-colors,
   (
     // Colors map
-    "input-background": $mbsc-windows-input-background,
-    "input-text": $mbsc-windows-input-text,
-    "input-accent": $mbsc-windows-input-accent,
-    "input-border": $mbsc-windows-input-border
+    'input-background': $mbsc-windows-input-background,
+    'input-text': $mbsc-windows-input-text,
+    'input-accent': $mbsc-windows-input-accent,
+    'input-border': $mbsc-windows-input-border
   )
 );
 
@@ -6129,23 +6148,23 @@ $mbsc-windows-dark-colors: map-merge(
   $mbsc-windows-dark-colors,
   (
     // Colors map
-    "input-background": $mbsc-windows-dark-input-background,
-    "input-text": $mbsc-windows-dark-input-text,
-    "input-accent": $mbsc-windows-dark-input-accent,
-    "input-border": $mbsc-windows-dark-input-border
+    'input-background': $mbsc-windows-dark-input-background,
+    'input-text': $mbsc-windows-dark-input-text,
+    'input-accent': $mbsc-windows-dark-input-accent,
+    'input-border': $mbsc-windows-dark-input-border
   )
 );
 
 @mixin mbsc-windows-input($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $bg-param: map-get($params, "input-background");
-  $text-param: map-get($params, "input-text");
-  $brd-param: map-get($params, "input-border");
-  $acc-param: map-get($params, "input-accent");
-  $err-param: map-get($params, "form-error");
+  $bg-param: map-get($params, 'input-background');
+  $text-param: map-get($params, 'input-text');
+  $brd-param: map-get($params, 'input-border');
+  $acc-param: map-get($params, 'input-accent');
+  $err-param: map-get($params, 'form-error');
 
   $background: if($bg-param, $bg-param, $background);
   $text: if($text-param, $text-param, $text);
@@ -6154,10 +6173,10 @@ $mbsc-windows-dark-colors: map-merge(
 
   $input-backgound: $background;
   $input-hover: $text;
-  $input-border: "";
-  $input-disabled-background: "";
-  $input-disabled-color: "";
-  $input-tag-background: "";
+  $input-border: '';
+  $input-disabled-background: '';
+  $input-disabled-color: '';
+  $input-tag-background: '';
 
   // Light background
   @if (lightness($background) > 50%) {
@@ -6477,8 +6496,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-input("windows", $mbsc-windows-colors);
-  @include mbsc-windows-input("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-input('windows', $mbsc-windows-colors);
+  @include mbsc-windows-input('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-input {
@@ -6769,9 +6788,9 @@ $mbsc-windows-dark-colors: map-merge(
 }
 
 @mixin mbsc-material-scroller($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
   .mbsc-#{$theme} {
     &.mbsc-scroller-wheel-cont::after,
@@ -6806,7 +6825,7 @@ $mbsc-windows-dark-colors: map-merge(
 
     &.mbsc-scroller-wheel-cont::after,
     &.mbsc-scroller-wheel-cont::before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 100%;
@@ -6856,7 +6875,7 @@ $mbsc-windows-dark-colors: map-merge(
       margin-top: -0.55em;
 
       &::after {
-        content: "";
+        content: '';
         box-sizing: border-box;
         position: absolute;
         display: block;
@@ -6924,23 +6943,23 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-scroller("material", $mbsc-material-colors);
-  @include mbsc-material-scroller("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-scroller('material', $mbsc-material-colors);
+  @include mbsc-material-scroller('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-ios-scroller($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
   $item-color: hsl(hue($text), saturation($text), 62%);
 
-  $background-alt: "";
-  $background-top-bottom: "";
-  $item-3d: "";
-  $overlay: "";
-  $scroller-background: "";
-  $scroller-selected-line: "";
+  $background-alt: '';
+  $background-top-bottom: '';
+  $item-3d: '';
+  $overlay: '';
+  $scroller-background: '';
+  $scroller-selected-line: '';
 
   @if (lightness($background) > 50%) {
     $background-alt: lighten($background, 3%);
@@ -7117,7 +7136,7 @@ $mbsc-windows-dark-colors: map-merge(
       margin-top: -0.875em;
 
       &::after {
-        content: "";
+        content: '';
         box-sizing: border-box;
         position: absolute;
         display: block;
@@ -7197,17 +7216,17 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-scroller("ios", $mbsc-ios-colors);
-  @include mbsc-ios-scroller("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-scroller('ios', $mbsc-ios-colors);
+  @include mbsc-ios-scroller('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-windows-scroller($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $border: "";
-  $wheel-button: "";
+  $border: '';
+  $wheel-button: '';
 
   @if (lightness($background) > 50%) {
     $border: darken($background, 10%);
@@ -7302,7 +7321,7 @@ $mbsc-windows-dark-colors: map-merge(
       height: 1.5625em;
 
       &::after {
-        content: "";
+        content: '';
         box-sizing: border-box;
         position: absolute;
         display: block;
@@ -7352,8 +7371,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-scroller("windows", $mbsc-windows-colors);
-  @include mbsc-windows-scroller("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-scroller('windows', $mbsc-windows-colors);
+  @include mbsc-windows-scroller('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-scroller {
@@ -7546,7 +7565,7 @@ $mbsc-windows-dark-colors: map-merge(
     // height: 100%;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 2px;
       right: 2px;
@@ -7604,20 +7623,20 @@ $mbsc-windows-dark-colors: map-merge(
 }
 
 @mixin mbsc-ios-segmented($theme, $params) {
-  $background: map-get($params, "background");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $accent: map-get($params, 'accent');
 
-  $bg-param: map-get($params, "form-background");
-  $acc-param: map-get($params, "form-accent");
+  $bg-param: map-get($params, 'form-background');
+  $acc-param: map-get($params, 'form-accent');
 
   $background: if($bg-param, $bg-param, $background);
   $accent: if($acc-param, $acc-param, $accent);
 
   $is-dark: false;
-  $selectbox: "";
-  $selectbox-contrast: "";
-  $button-background: "";
-  $shadow: "";
+  $selectbox: '';
+  $selectbox-contrast: '';
+  $button-background: '';
+  $shadow: '';
 
   @if (lightness($background) > 50%) {
     $button-background: darken($background, 10%);
@@ -7713,7 +7732,7 @@ $mbsc-windows-dark-colors: map-merge(
     }
 
     &.mbsc-segmented-item:before {
-      content: "";
+      content: '';
       position: absolute;
       border-left: 1px solid;
       top: 0.3125em;
@@ -7825,25 +7844,25 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-segmented("ios", $mbsc-ios-colors);
-  @include mbsc-ios-segmented("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-segmented('ios', $mbsc-ios-colors);
+  @include mbsc-ios-segmented('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-material-segmented($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $bg-param: map-get($params, "form-background");
-  $acc-param: map-get($params, "form-accent");
-  $text-param: map-get($params, "form-text");
+  $bg-param: map-get($params, 'form-background');
+  $acc-param: map-get($params, 'form-accent');
+  $text-param: map-get($params, 'form-text');
   $background: if($bg-param, $bg-param, $background);
   $accent: if($acc-param, $acc-param, $accent);
   $text: if($text-param, $text-param, $text);
 
-  $button-color: "";
-  $button-background: "";
-  $button-text: "";
+  $button-color: '';
+  $button-background: '';
+  $button-text: '';
 
   @if (lightness($background) > 50%) {
     $button-background: darken($background, 19%);
@@ -7929,7 +7948,7 @@ $mbsc-windows-dark-colors: map-merge(
       }
 
       &.mbsc-focus:after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         top: 0;
@@ -8026,29 +8045,29 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-segmented("material", $mbsc-material-colors);
-  @include mbsc-material-segmented("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-segmented('material', $mbsc-material-colors);
+  @include mbsc-material-segmented('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-windows-segmented($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $bg-param: map-get($params, "form-background");
-  $text-param: map-get($params, "form-text");
-  $acc-param: map-get($params, "form-accent");
+  $bg-param: map-get($params, 'form-background');
+  $text-param: map-get($params, 'form-text');
+  $acc-param: map-get($params, 'form-accent');
 
   $background: if($bg-param, $bg-param, $background);
   $text: if($text-param, $text-param, $text);
   $accent: if($acc-param, $acc-param, $accent);
 
-  $button-border: "";
-  $button-hover: "";
-  $button-active: "";
-  $border: "";
-  $form-background: "";
-  $button-bg: "";
+  $button-border: '';
+  $button-hover: '';
+  $button-active: '';
+  $border: '';
+  $form-background: '';
+  $button-bg: '';
 
   @if (lightness($background) > 50%) {
     $button-border: darken($background, 40%);
@@ -8155,8 +8174,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-segmented("windows", $mbsc-windows-colors);
-  @include mbsc-windows-segmented("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-segmented('windows', $mbsc-windows-colors);
+  @include mbsc-windows-segmented('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-segmented {
@@ -8201,12 +8220,12 @@ $mbsc-windows-dark-colors: map-merge(
 }
 
 @mixin mbsc-ios-timegrid($theme, $params) {
-  $background: map-get($params, "background");
-  $accent: map-get($params, "accent");
-  $text: map-get($params, "text");
+  $background: map-get($params, 'background');
+  $accent: map-get($params, 'accent');
+  $text: map-get($params, 'text');
 
-  $background-hover: "";
-  $selected-text: "";
+  $background-hover: '';
+  $selected-text: '';
 
   @if (lightness($background) > 50%) {
     $background-hover: lighten($accent, 35%);
@@ -8247,17 +8266,17 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-timegrid("ios", $mbsc-ios-colors);
-  @include mbsc-ios-timegrid("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-timegrid('ios', $mbsc-ios-colors);
+  @include mbsc-ios-timegrid('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-material-timegrid($theme, $params) {
-  $background: map-get($params, "background");
-  $accent: map-get($params, "accent");
-  $text: map-get($params, "text");
+  $background: map-get($params, 'background');
+  $accent: map-get($params, 'accent');
+  $text: map-get($params, 'text');
 
-  $background-hover: "";
-  $selected-text: "";
+  $background-hover: '';
+  $selected-text: '';
 
   @if (lightness($background) > 50%) {
     $background-hover: lighten($accent, 35%);
@@ -8297,14 +8316,14 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-timegrid("material", $mbsc-material-colors);
-  @include mbsc-material-timegrid("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-timegrid('material', $mbsc-material-colors);
+  @include mbsc-material-timegrid('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-windows-timegrid($theme, $params) {
-  $background: map-get($params, "background");
-  $accent: map-get($params, "accent");
-  $text: map-get($params, "text");
+  $background: map-get($params, 'background');
+  $accent: map-get($params, 'accent');
+  $text: map-get($params, 'text');
 
   .mbsc-#{$theme} {
     &.mbsc-timegrid-item.mbsc-selected {
@@ -8337,8 +8356,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-timegrid("windows", $mbsc-windows-colors);
-  @include mbsc-windows-timegrid("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-timegrid('windows', $mbsc-windows-colors);
+  @include mbsc-windows-timegrid('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-datepicker {
@@ -8400,15 +8419,15 @@ $mbsc-windows-dark-colors: map-merge(
 }
 
 @mixin mbsc-ios-datepicker($theme, $params) {
-  $background: map-get($params, "background");
-  $accent: map-get($params, "accent");
-  $text: map-get($params, "text");
+  $background: map-get($params, 'background');
+  $accent: map-get($params, 'accent');
+  $text: map-get($params, 'text');
 
-  $background-alt: "";
-  $background-top-bottom: "";
-  $border-color: "";
-  $buttons-background: "";
-  $clear-hover: "";
+  $background-alt: '';
+  $background-top-bottom: '';
+  $border-color: '';
+  $buttons-background: '';
+  $clear-hover: '';
 
   @if (lightness($background) > 50%) {
     $background-alt: lighten($background, 3%);
@@ -8538,9 +8557,15 @@ $mbsc-windows-dark-colors: map-merge(
 
     // Segmented width based on controls
 
-    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-timegrid .mbsc-range-control-wrapper .mbsc-segmented,
-    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-time .mbsc-range-control-wrapper .mbsc-segmented,
-    &.mbsc-datepicker-control-date.mbsc-datepicker-control-time .mbsc-range-control-wrapper .mbsc-segmented,
+    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-timegrid
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
+    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-time
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
+    &.mbsc-datepicker-control-date.mbsc-datepicker-control-time
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
     &.mbsc-datepicker-control-datetime .mbsc-range-control-wrapper .mbsc-segmented {
       width: 25em; // 400px: default format can show -> "09/25/2020 12:30 AM"
     }
@@ -8605,18 +8630,18 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-ios-datepicker("ios", $mbsc-ios-colors);
-  @include mbsc-ios-datepicker("ios-dark", $mbsc-ios-dark-colors);
+  @include mbsc-ios-datepicker('ios', $mbsc-ios-colors);
+  @include mbsc-ios-datepicker('ios-dark', $mbsc-ios-dark-colors);
 }
 
 @mixin mbsc-material-datepicker($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $ctrl-background: "";
-  $clear-icon: "";
-  $clear-icon-hover: "";
+  $ctrl-background: '';
+  $clear-icon: '';
+  $clear-icon-hover: '';
 
   @if (lightness($background) > 50%) {
     $ctrl-background: darken($text, 36%);
@@ -8628,7 +8653,7 @@ $mbsc-windows-dark-colors: map-merge(
     $clear-icon-hover: lighten($clear-icon, 20%);
   }
 
-  $background-alt: "";
+  $background-alt: '';
 
   // Light background
   @if (lightness($background) > 50%) {
@@ -8736,9 +8761,15 @@ $mbsc-windows-dark-colors: map-merge(
 
     // Segmented width based on controls
 
-    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-timegrid .mbsc-range-control-wrapper .mbsc-segmented,
-    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-time .mbsc-range-control-wrapper .mbsc-segmented,
-    &.mbsc-datepicker-control-date.mbsc-datepicker-control-time .mbsc-range-control-wrapper .mbsc-segmented,
+    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-timegrid
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
+    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-time
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
+    &.mbsc-datepicker-control-date.mbsc-datepicker-control-time
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
     &.mbsc-datepicker-control-datetime .mbsc-range-control-wrapper .mbsc-segmented {
       width: 25em; // 400px: default format can show -> "09/25/2020 12:30 AM"
     }
@@ -8781,16 +8812,16 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-material-datepicker("material", $mbsc-material-colors);
-  @include mbsc-material-datepicker("material-dark", $mbsc-material-dark-colors);
+  @include mbsc-material-datepicker('material', $mbsc-material-colors);
+  @include mbsc-material-datepicker('material-dark', $mbsc-material-dark-colors);
 }
 
 @mixin mbsc-windows-datepicker($theme, $params) {
-  $background: map-get($params, "background");
-  $text: map-get($params, "text");
-  $accent: map-get($params, "accent");
+  $background: map-get($params, 'background');
+  $text: map-get($params, 'text');
+  $accent: map-get($params, 'accent');
 
-  $button-bg: "";
+  $button-bg: '';
 
   @if (lightness($background) > 50%) {
     $button-bg: darken($background, 20%);
@@ -8798,8 +8829,8 @@ $mbsc-windows-dark-colors: map-merge(
     $button-bg: lighten($background, 15%);
   }
 
-  $border: "";
-  $hover: "";
+  $border: '';
+  $hover: '';
 
   @if (lightness($background) > 50%) {
     $border: darken($background, 10%);
@@ -8908,9 +8939,15 @@ $mbsc-windows-dark-colors: map-merge(
 
     // Segmented width based on controls
 
-    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-timegrid .mbsc-range-control-wrapper .mbsc-segmented,
-    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-time .mbsc-range-control-wrapper .mbsc-segmented,
-    &.mbsc-datepicker-control-date.mbsc-datepicker-control-time .mbsc-range-control-wrapper .mbsc-segmented,
+    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-timegrid
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
+    &.mbsc-datepicker-control-calendar.mbsc-datepicker-control-time
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
+    &.mbsc-datepicker-control-date.mbsc-datepicker-control-time
+      .mbsc-range-control-wrapper
+      .mbsc-segmented,
     &.mbsc-datepicker-control-datetime .mbsc-range-control-wrapper .mbsc-segmented {
       width: 26.25em; // 420px: default format can show -> "09/25/2020 12:30 AM"
     }
@@ -8942,8 +8979,8 @@ $mbsc-windows-dark-colors: map-merge(
     }
   }
 
-  @include mbsc-windows-datepicker("windows", $mbsc-windows-colors);
-  @include mbsc-windows-datepicker("windows-dark", $mbsc-windows-dark-colors);
+  @include mbsc-windows-datepicker('windows', $mbsc-windows-colors);
+  @include mbsc-windows-datepicker('windows-dark', $mbsc-windows-dark-colors);
 }
 
 @if $mbsc-datepicker {

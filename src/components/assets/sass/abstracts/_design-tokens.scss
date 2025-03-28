@@ -1,16 +1,14 @@
-@use "sass:map";
-
-
+@use 'sass:map';
 
 $font-sizes: (
-  'xs': 12px, 
+  'xs': 12px,
   'sm': 14px,
-  'base': 16px,  
+  'base': 16px,
   'lg': 18px,
-  'xl': 20px, 
-  '2xl': 24px, 
+  'xl': 20px,
+  '2xl': 24px,
   '3xl': 30px,
-  '4xl': 36px ,
+  '4xl': 36px,
 );
 
 $font-weights: (
@@ -18,12 +16,18 @@ $font-weights: (
   'regular': 400,
   'medium': 500,
   'semibold': 600,
-  'bold': 700
+  'bold': 700,
 );
 
 $font-families: (
-  'primary': ('Inter', sans-serif),
-  'secondary': ('Roboto', sans-serif)
+  'primary': (
+    'Inter',
+    sans-serif,
+  ),
+  'secondary': (
+    'Roboto',
+    sans-serif,
+  ),
 );
 
 $spacing: (
@@ -32,7 +36,7 @@ $spacing: (
   'md': 1rem,
   'lg': 1.5rem,
   'xl': 2rem,
-  '2xl': 3rem
+  '2xl': 3rem,
 );
 
 @function get-color($key, $variant: null) {
@@ -48,4 +52,4 @@ $spacing: (
 
 @function get-font-size($key) {
   @return map.get($font-sizes, $key);
-} 
+}

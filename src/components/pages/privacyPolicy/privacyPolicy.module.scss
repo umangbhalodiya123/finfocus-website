@@ -1,119 +1,120 @@
 .privacyPolicyalignment {
-    padding: 40px 16px 60px 16px;
+  padding: 40px 16px 60px 16px;
 
-    .firstContent {
-        padding: 0 0 60px 0;
+  .firstContent {
+    padding: 0 0 60px 0;
 
-        p {
-            color: #707082;
-            text-align: center;
-            max-width: 318px;
-            margin: 0 auto;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.98px;
-            text-transform: uppercase;
-        }
-
-        h1 {
-            color: #05030C;
-            margin: 16px 0 0 0;
-            text-align: center;
-            font-size: 46px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 50px;
-        }
+    p {
+      color: #707082;
+      text-align: center;
+      max-width: 318px;
+      margin: 0 auto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.98px;
+      text-transform: uppercase;
     }
 
-    .tableOfContent {
-        padding: 0 0 60px 0;
+    h1 {
+      color: #05030c;
+      margin: 16px 0 0 0;
+      text-align: center;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 50px;
+    }
+  }
 
-        h3 {
-            color: #03060C;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            margin: 0 0 24px 0;
-            line-height: 32px;
-        }
+  .tableOfContent {
+    padding: 0 0 60px 0;
 
-        p {
-            position: relative;
-            color: #707082;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            padding-left: 16px;
-            border-left: 2px solid transparent;
-            line-height: normal;
-            margin: 0 0 16px 0;
-            transition: .3s ease-in-out;
-
-            &:hover {
-                border-left: 2px solid #3B348A;
-                color: #3B348A;
-            }
-        }
-
-        p:last-child {
-            margin: 0;
-        }
+    h3 {
+      color: #03060c;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      margin: 0 0 24px 0;
+      line-height: 32px;
     }
 
-    .detailsAlignment {
-        h3 {
-            color: #05030C;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 500;
-            margin: 0 0 16px 0;
-            line-height: 36px;
-        }
+    p {
+      position: relative;
+      color: #707082;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      padding-left: 16px;
+      border-left: 2px solid transparent;
+      line-height: normal;
+      margin: 0 0 16px 0;
+      transition: 0.3s ease-in-out;
 
-        h4 {
-            color: #05030C;
-            margin: 0 0 16px 0;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 32px;
-        }
-
-        p {
-            color: #707082;
-            font-size: 16px;
-            margin: 0 0 16px 0;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-        }
-
-        h5 {
-            color: #1F1F2B;
-            margin: 0 0 16px 0;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
-        }
-
-        ul ,ol {
-            padding: 0 0 24px 15px;
-            margin: 0;
-            li {
-                color: #707082;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            }
-        }
-
-        .spacer {
-            padding: 32px 0 0 0;
-        }
+      &:hover {
+        border-left: 2px solid #3b348a;
+        color: #3b348a;
+      }
     }
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+
+  .detailsAlignment {
+    h3 {
+      color: #05030c;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      margin: 0 0 16px 0;
+      line-height: 36px;
+    }
+
+    h4 {
+      color: #05030c;
+      margin: 0 0 16px 0;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    p {
+      color: #707082;
+      font-size: 16px;
+      margin: 0 0 16px 0;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    h5 {
+      color: #1f1f2b;
+      margin: 0 0 16px 0;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    ul,
+    ol {
+      padding: 0 0 24px 15px;
+      margin: 0;
+      li {
+        color: #707082;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+
+    .spacer {
+      padding: 32px 0 0 0;
+    }
+  }
 }
