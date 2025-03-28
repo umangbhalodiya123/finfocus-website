@@ -70,6 +70,11 @@
       font-style: normal;
       font-weight: 600;
       line-height: 18px;
+      .contactUsIcon{
+        position: relative;
+        height: 28px;
+        width: 28px;
+      }
     }
   }
 
@@ -124,7 +129,11 @@
     justify-content: space-between;
     padding: 0 0 32px 0;
     position: relative;
-
+    .footerMainLogo{
+      position: relative;
+      height: 34px;
+      width: 137px;
+    }
     img {
       display: block;
       cursor: pointer;

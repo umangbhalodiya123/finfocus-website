@@ -42,7 +42,7 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <img src={Logo.src} alt='Logo' />
+          <Image src={Logo.src} alt='Logo' layout='fill' />
         </div>
         <div className={styles.iconalignment}>
           <div onClick={handleClick}>

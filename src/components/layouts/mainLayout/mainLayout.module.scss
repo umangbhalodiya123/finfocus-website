@@ -1,25 +1,31 @@
-@use "sass:map";
-@use "../../assets/sass/abstracts/design-tokens" as *;
-@use "../../assets/sass/abstracts/mixins" as *;
-@use "../../assets/sass/abstracts/breakpoints" as *;
+@use 'sass:map';
+@use '../../assets/sass/abstracts/design-tokens' as *;
+@use '../../assets/sass/abstracts/mixins' as *;
+@use '../../assets/sass/abstracts/breakpoints' as *;
 
 .mobileViewShow {
-    @media (min-width: 580px) {
-        display: none;
-    }
+  @media (min-width: 580px) {
+    display: none;
+  }
 }
 
 .tabviewShow {
-    display: none;
-    height: 100vh;
-    padding: 0 20px;
-    // position: relative;
-    // img{
-    //     max-height: 50px;
-    // }
-    @media (min-width: 580px)  {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  display: none;
+  height: 100vh;
+  padding: 0 20px;
+  // position: relative;
+  // img{
+  //     max-height: 50px;
+  // }
+  position: relative;
+  .logoWrap {
+    position: relative;
+    width: 127px;
+    height: 30px;
+  }
+  @media (min-width: 580px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

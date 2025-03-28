@@ -13,22 +13,30 @@ export default function ContactIUsBanner() {
       <div className={styles.grid}>
         <div className={styles.griditems}>
           <div className={styles.icon}>
-            <img src={WhatsappIcon.src} alt='WhatsappIcon' />
+            <div className={styles.whatsappIcon}>
+              <Image src={WhatsappIcon.src} alt='WhatsappIcon' layout='fill' />
+            </div>
           </div>
           <h2>WhatsApp</h2>
           <button>
             Contact us
-            <img src={SendIcon.src} alt='SendIcon' />
+            <div className={styles.imgWrap}>
+              <Image src={SendIcon.src} alt='SendIcon' layout='fill' />
+            </div>
           </button>
         </div>
         <div className={styles.griditems}>
           <div className={styles.icon}>
-            <img src={WhatsappIcon.src} alt='WhatsappIcon' />
+            <div className={styles.whatsappIcon}>
+              <Image src={WhatsappIcon.src} alt='WhatsappIcon' layout='fill' />
+            </div>
           </div>
           <h2>Telegram</h2>
           <button>
             Contact us
-            <img src={SendIcon.src} alt='SendIcon' />
+            <div className={styles.imgWrap}>
+              <Image src={SendIcon.src} alt='SendIcon' layout='fill' />
+            </div>
           </button>
         </div>
       </div>

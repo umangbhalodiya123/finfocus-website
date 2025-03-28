@@ -47,14 +47,26 @@
                 }
 
                 .leftAlignment {
+          
                     display: flex;
                     align-items: center;
                     gap: 12px;
 
                     .twoiconAlignment {
+              
                         display: flex;
                         align-items: center;
                         gap: 4px;
+                        .emojiImage1{
+                            position: relative;
+                            min-height: 20px;
+                            min-width: 20px;
+                        }
+                    }
+                    .emojiImage1{
+                        position: relative;
+                        min-height: 20px;
+                        min-width: 20px;
                     }
                 }
             }

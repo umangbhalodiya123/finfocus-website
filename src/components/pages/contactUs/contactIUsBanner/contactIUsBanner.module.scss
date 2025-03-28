@@ -38,6 +38,13 @@
 
             .icon {
                 margin-top: -65px;
+                .whatsappIcon{
+                    position: relative;
+                    height: 58px;
+                    width: 58px;
+
+                }
+   
             }
 
             h2 {
@@ -63,6 +70,11 @@
                 display: flex;
                 align-items: center;
                 gap: 12px;
+                .imgWrap{
+                    position: relative;
+                    height: 28px;
+                    width: 28px;
+                }
             }
         }
     }

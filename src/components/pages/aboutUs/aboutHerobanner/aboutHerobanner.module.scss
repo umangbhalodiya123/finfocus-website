@@ -1,86 +1,91 @@
 .aboutHerobanner {
-    padding: 40px 16px;
+  padding: 40px 16px;
 
-    .sectionDetails {
-        padding: 0 0 32px 0;
+  .sectionDetails {
+    padding: 0 0 32px 0;
 
-        h1 {
-            color: #05030C;
-            font-size: 46px;
-            margin: 0 0 16px 0;
-            font-style: normal;
-            text-align: center;
-            font-weight: 600;
-            line-height: 54px;
-            text-transform: capitalize;
-        }
+    h1 {
+      color: #05030c;
+      font-size: 46px;
+      margin: 0 0 16px 0;
+      font-style: normal;
+      text-align: center;
+      font-weight: 600;
+      line-height: 54px;
+      text-transform: capitalize;
+    }
 
-        span {
+    span {
+      display: block;
+      color: #1f1f2b;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 343px;
+      margin: 0 auto;
+    }
+
+    p {
+      color: #50505e;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      max-width: 343px;
+      margin: 16px auto 0 auto;
+    }
+  }
+
+  .roundAlignment {
+    max-width: 324px;
+    margin: 0 auto;
+
+    .round:last-child {
+      margin: 0;
+    }
+    .round {
+      border: 1px solid var(--purple, #3b348a);
+      padding: 50px 64px;
+      border-radius: 50%;
+      margin: 0 0 24px 0;
+
+      .centerIconAlignment {
+        display: flex;
+        align-items: center;
+        padding: 0 0 24px 0;
+        justify-content: center;
+
+        .imageWrap {
+          position: relative;
+          height: 56px;
+          width: 56px;
+          img {
             display: block;
-            color: #1F1F2B;
-            text-align: center;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            max-width: 343px;
-            margin: 0 auto;
+          }
         }
+      }
 
-        p {
-            color: #50505E;
-            text-align: center;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
-            max-width: 343px;
-            margin: 16px auto 0 auto;
-        }
+      h3 {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        text-align: center;
+        margin: 0 0 12px 0;
+      }
+
+      p {
+        color: #3e4c55;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
     }
-
-    .roundAlignment {
-        max-width: 324px;
-        margin: 0 auto;
-
-        .round:last-child {
-            margin: 0;
-        }
-        .round {
-            border: 1px solid var(--purple, #3B348A);
-            padding: 50px 64px;
-            border-radius: 50%;
-            margin:  0 0 24px 0;
-
-            .centerIconAlignment {
-                display: flex;
-                align-items: center;
-                padding: 0 0 24px 0;
-                justify-content: center;
-
-                img {
-                    display: block;
-                }
-            }
-
-            h3 {
-                color: #000;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 34px;
-                text-align: center;
-                margin: 0 0 12px 0;
-            }
-
-            p {
-                color: #3E4C55;
-                text-align: center;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-            }
-        }
-    }
+  }
 }

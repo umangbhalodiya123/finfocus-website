@@ -17,14 +17,18 @@ export default function AboutHerobanner() {
       <div className={styles.roundAlignment}>
         <div className={styles.round}>
           <div className={styles.centerIconAlignment}>
-            <img src={VisionIcon.src} alt='VisionIcon' />
+            <div className={styles.imageWrap}>
+              <Image src={VisionIcon.src} alt='VisionIcon' layout='fill' />
+            </div>
           </div>
           <h3>Our Vision</h3>
           <p>to be a leading force in promoting fair and transparent global financial markets.</p>
         </div>
         <div className={styles.round}>
           <div className={styles.centerIconAlignment}>
-            <img src={VisionIcon.src} alt='VisionIcon' />
+            <div className={styles.imageWrap}>
+              <Image src={VisionIcon.src} alt='VisionIcon' layout='fill' />
+            </div>
           </div>
           <h3>Our Vision</h3>
           <p>to be a leading force in promoting fair and transparent global financial markets.</p>

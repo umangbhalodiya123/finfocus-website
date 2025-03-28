@@ -76,11 +76,17 @@ export default function Details() {
           <div className={styles.cardFooteralignment}>
             <div className={styles.leftAlignment}>
               <div className={styles.twoiconAlignment}>
-                <img src={OffIcon.src} alt='OffIcon' />
-                <img src={SmileIcon.src} alt='SmileIcon' />
+                <div className={styles.emojiImage1}>
+                  <Image src={OffIcon.src} alt='OffIcon' layout='fill' />
+                </div>
+                <div className={styles.emojiImage1}>
+                  <Image src={SmileIcon.src} alt='SmileIcon' layout='fill' />
+                </div>
               </div>
               <span>21</span>
-              <img src={HappyIcon.src} alt='HappyIcon' />
+              <div className={styles.emojiImage1}>
+                <Image src={HappyIcon.src} alt='HappyIcon' layout='fill' />
+              </div>
             </div>
             <div className={styles.commentIconTextalignment}>
               <CommentIcon />

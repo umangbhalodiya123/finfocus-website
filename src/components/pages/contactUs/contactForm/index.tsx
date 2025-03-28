@@ -37,7 +37,9 @@ export default function ContactForm() {
         <div className={styles.button}>
           <button>
             Send a message
-            <img src={RightIcon.src} alt='RightIcon' />
+            <div className={styles.submitFormIcon}>
+              <Image src={RightIcon.src} alt='RightIcon' layout='fill' />
+            </div>
           </button>
         </div>
       </div>

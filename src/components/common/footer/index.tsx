@@ -16,7 +16,9 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerTopbarAlignment}>
-        <img src={Logo.src} alt='Logo' />
+        <div className={styles.footerMainLogo}>
+          <Image src={Logo.src} alt='Logo' layout='fill' />
+        </div>
         <div className={styles.backToTop}>
           <span>Back to top</span>
           <UpIcon />
@@ -56,7 +58,9 @@ export default function Footer() {
       <div className={styles.contactButton}>
         <button aria-label='Contact us' onClick={() => redirect(`/${locale}/contact-us`)}>
           Contact us
-          <img src={Chatbot.src} alt='Chatbot' />
+          <div className={styles.contactUsIcon}>
+            <Image src={Chatbot.src} alt='Chatbot' layout='fill' />
+          </div>
         </button>
       </div>
       <div className={styles.ourSocial}>

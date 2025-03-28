@@ -10,7 +10,7 @@ export default function RankingCard() {
         return (
           <div className={styles.card} key={i}>
             <div className={styles.image}>
-              <img src={FxtmImage.src} alt='FxtmImage' />
+              <Image src={FxtmImage.src} alt='FxtmImage' layout='fill' />
             </div>
             <div>
               <div className={styles.cardHeader}>
@@ -20,8 +20,8 @@ export default function RankingCard() {
                     9.20 <span>Score</span>
                   </p>
                 </div>
-                <div>
-                  <img src={LockIcon.src} alt='LockIcon' />
+                <div className={styles.rankIcon}>
+                  <Image src={LockIcon.src} alt='LockIcon' layout='fill' />
                 </div>
               </div>
               <div className={styles.buttonAlignment}>

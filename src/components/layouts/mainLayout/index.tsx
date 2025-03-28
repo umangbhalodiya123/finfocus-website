@@ -14,7 +14,9 @@ export default function MainLayout({ children }: any) {
         <Footer />
       </div>
       <div className={styles.tabviewShow}>
-        <img src={Logo.src} alt='Logo' />
+        <div className={styles.logoWrap}>
+          <Image src={Logo.src} alt='Logo' layout='fill' />
+        </div>
       </div>
     </div>
   )

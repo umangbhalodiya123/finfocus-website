@@ -47,8 +47,7 @@ export default [
       semi: ['error', 'never'],
       'prefer-const': 'error',
       'react-hooks/exhaustive-deps': 'error',
-      'react/no-unescaped-entities': 'off', // Allow unescaped ' and "
-      'next/next/no-img-element': 'off', // Allow <img> usage
+      'react/no-unescaped-entities': 'off',
     },
   },
 ]

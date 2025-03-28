@@ -23,7 +23,7 @@ export default function HomeBlog() {
           return (
             <div className={styles.card} key={i}>
               <div className={styles.image}>
-                <img src={BlogImage.src} alt='BlogImage' />
+                <Image src={BlogImage.src} alt='BlogImage' layout='fill' />
               </div>
               <div className={styles.cardDetails}>
                 <div className={styles.cardHeader}>
@@ -33,15 +33,21 @@ export default function HomeBlog() {
                     <span>2 min read</span>
                   </div>
                 </div>
-                <h3>Trump's election win impacted forex, gold and oil</h3>
+                <h3>Trump&#39;s election win impacted forex, gold and oil</h3>
                 <div className={styles.cardFooteralignment}>
                   <div className={styles.leftAlignment}>
                     <div className={styles.twoiconAlignment}>
-                      <img src={OffIcon.src} alt='OffIcon' />
-                      <img src={SmileIcon.src} alt='SmileIcon' />
+                      <div className={styles.emojiImage1}>
+                        <Image src={OffIcon.src} alt='OffIcon' layout='fill' />
+                      </div>
+                      <div className={styles.emojiImage1}>
+                        <Image src={SmileIcon.src} alt='SmileIcon' layout='fill' />
+                      </div>
                     </div>
                     <span>21</span>
-                    <img src={HappyIcon.src} alt='HappyIcon' />
+                    <div className={styles.emojiImage1}>
+                      <Image src={HappyIcon.src} alt='HappyIcon' layout='fill' />
+                    </div>
                   </div>
                   <div className={styles.commentIconTextalignment}>
                     <CommentIcon />
